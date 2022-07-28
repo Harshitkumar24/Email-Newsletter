@@ -1,0 +1,257 @@
+@font-face {
+  font-family: "Raleway-regular";
+  src: url(./fonts/Raleway-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Raleway-medium";
+  src: url(./fonts/Raleway-Medium.ttf);
+}
+
+@font-face {
+  font-family: "Raleway-black";
+  src: url(./fonts/Raleway-Black.ttf);
+}
+
+@font-face {
+  font-family: "Raleway-bold";
+  src: url(./fonts/Raleway-Bold.ttf);
+}
+
+@font-face {
+  font-family: "Raleway-semibold";
+  src: url(./fonts/Raleway-SemiBold.ttf);
+}
+@font-face {
+  font-family: "Raleway-extrabold";
+  src: url(./fonts/Raleway-ExtraBold.ttf);
+}
+
+:root {
+  --primary: #eebf00;
+  --secondary: #232b38;
+  --ternary: #6c6c6c;
+  --danger: #fe4545;
+  --pure: #fefefe;
+  --light: #f0f0f0;
+  --heaven: #ffffff;
+  --footer: #2d333d;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header.top {
+  background: var(--secondary);
+}
+
+li,a,button {
+  font-family: "Raleway-medium";
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--heaven);
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10%;
+}
+
+.logo {
+  cursor: pointer;
+  color: var(--light);
+  height: 35px;
+  width: 35px;
+  margin-top: 0.5rem;
+}
+
+.nav-links {
+  list-style: none;
+}
+
+.nav-links li {
+  display: inline-block;
+  padding: 0 20px;
+}
+
+.nav-links li a {
+  transition: all 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: var(--primary);
+}
+
+.container {
+  align-items: center;
+
+}
+
+/***************** Main section**********************/
+
+header.hero {
+  height: 600px;
+  background-image: url(./images/sean-oulashin-KMn4VEeEPR8-unsplash.jpg);
+  background-position: 0% 0%;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  font-family: "Raleway-bold";
+}
+header.hero .icon {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 1rem;
+}
+
+header.hero h1 {
+  font-family: "Raleway-semibold";
+}
+
+header.hero span {
+  font-family: "Raleway-bold";
+  margin-right: 0.75rem;
+  margin-bottom: 10rem;
+  font-weight: bold;
+}
+
+header.hero p {
+  font-family: "Raleway-medium";
+  width: 50%;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+.btn {
+  padding: 0.75rem 0.75rem;
+  border-radius: 50px;
+  border: none;
+  line-height: 0.8;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 1px solid transparent;
+  background: var(--primary);
+}
+
+.btn:hover {
+  background-color: var(--secondary);
+  color: var(--pure);
+  border: 1px solid var(--pure);
+}
+
+.btn-primary {
+  background: var(--primary);
+  color: var(--heaven);
+  margin-right: 1rem;
+}
+.btn-primary:hover {
+  background: var(--heaven);
+  color: var(--primary);
+  border: 1px solid var(--primary);
+}
+
+.btn-secondary {
+  background: var(--secondary);
+  color: var(--heaven);
+}
+
+.btn-secondary:hover {
+  background: var(--heaven);
+  color: var(--secondary);
+  border: 1px solid var(--secondary);
+}
+
+header.hero .hero-image {
+  position: absolute;
+  top: 2rem;
+  right: rem;
+}
+
+/***************** News section**********************/
+
+.news {
+  background: var(--light);
+  background-size: cover;
+  padding: 100px 40px;
+  text-align: center;
+  color: var(--secondary);
+}
+.news h1 {
+  font-family: "Raleway-medium";
+}
+.news p {
+  max-width: 600px;
+  margin: 40px auto;
+  font-size: 15px;
+  font-weight: 300;
+  font-family: "Raleway-medium";
+}
+
+.email-box {
+  height: 40px;
+  display: flex;
+  justify-content: center;
+
+}
+
+.email-box img {
+  background: #2f3542;
+  width: 40px;
+  line-height: 15px;
+  padding: 5px 5px 5px 5px;
+  border-radius: 5px 0 0px 5px ;
+}
+
+.tbox{
+    width: 0%;
+    outline: none;
+    border: none;
+}
+
+.email-box:hover > .tbox, .tbox:focus{
+    width: 260px;
+    padding: 0 10px;
+}
+ 
+.email-btn {
+  border: none;
+  outline: none;
+  color: var(--pure);
+  font-family: "Raleway-semibold";
+  background: #2f3542;
+  padding: 0 10px;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 0px 5px 5px 0px;
+
+}
+
+/***************** footer section**********************/
+
+footer {
+    background: var(--footer);
+    text-align: center;
+    padding: 5rem 0;
+  }
+  
+  footer .footer-logo {
+    margin-bottom: 3rem;
+    width: 150px;
+  }
+  footer .footer-social img {
+    margin-right: 1rem;
+  }
+  footer .footer-social {
+    margin-bottom: 2rem;
+    color: #fff;
+  }
+  footer p {
+    color: var(--pure);
+  }
